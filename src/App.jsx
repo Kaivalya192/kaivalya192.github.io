@@ -17,19 +17,24 @@ const sorters = {
 
 const filterOptions = [
   {
+    id: 'vision',
+    label: 'Computer Vision',
+    match: (tags) => tags.includes('vision') || tags.includes('ocr'),
+  },
+  {
+    id: 'perception',
+    label: '3D Perception',
+    match: (tags) => tags.includes('perception') || tags.includes('pointcloud') || tags.includes('depth'),
+  },
+  {
     id: 'ros2',
-    label: 'ROS2',
+    label: 'ROS2 Systems',
     match: (tags) => tags.includes('ros2'),
   },
   {
     id: 'industrial',
-    label: 'Industrial',
+    label: 'Industrial Deployments',
     match: (tags) => tags.includes('industrial'),
-  },
-  {
-    id: 'perception',
-    label: 'Perception',
-    match: (tags) => tags.includes('perception'),
   },
   {
     id: 'agentic',
@@ -43,12 +48,12 @@ const filterOptions = [
   },
   {
     id: 'robots',
-    label: 'Robots',
+    label: 'Robots & Platforms',
     match: (tags) => tags.includes('robot') || tags.includes('robotics'),
   },
 ];
 
-const heroBadges = ['ROS2', 'Agentic AI', 'Perception', 'Edge/Jetson'];
+const heroBadges = ['Vision Systems', 'Edge AI', 'Perception', 'ROS2 Integration'];
 
 function App() {
   const [activeFilters, setActiveFilters] = useState(() => new Set());
@@ -91,16 +96,13 @@ function App() {
             className="space-y-6 md:space-y-8"
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/40 bg-cyan-500/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-cyan-200 backdrop-blur">
-              <Sparkles size={14} /> Robotics Engineer - Full-Stack Autonomy
+              <Sparkles size={14} /> Computer Vision & Robotics Engineer
             </div>
             <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Building <span className="gradient-text">production robotics</span> that see, think,
-              and act in milliseconds.
+              Shipping <span className="gradient-text">vision-first autonomy</span> that keeps robots perceptive and precise.
             </h1>
             <p className="max-w-2xl text-lg text-slate-300 md:text-xl">
-              I blend ROS2, perception, and agentic AI to deliver resilient automation on factory
-              floors and research robots. From high-FPS pose tracking to LangGraph-driven humanoids,
-              I bridge rapid prototypes to hardened deployments.
+              I design high-fidelity perception stacks - multi-camera, depth, and neural vision - that power dependable manipulation and mobility. Robotics and ROS2 remain the backbone, but computer vision leads every deployment.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
               {heroBadges.map((badge) => (
@@ -161,7 +163,7 @@ function App() {
         </section>
 
         <section id="projects" aria-labelledby="projects-title" className="space-y-10">
-          <SectionTitle icon={Rocket} id="projects-title" label="Impact Projects" eyebrow="Ship-ready robotics" />
+          <SectionTitle icon={Rocket} id="projects-title" label="Vision-Led Impact" eyebrow="Computer vision powering autonomy" />
           <div className="flex flex-wrap items-center gap-4 rounded-3xl border border-slate-800 bg-slate-900/50 p-5 backdrop-blur lg:p-6">
             <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-cyan-200">
               <Filter size={16} /> Filters
@@ -197,7 +199,7 @@ function App() {
                 className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-1 text-sm text-slate-200 focus:border-cyan-500"
               >
                 <option value="impact">Impact</option>
-                <option value="az">A → Z</option>   // or "A &rarr; Z"
+                <option value="az">A -> Z</option>
               </select>
             </div>
           </div>
@@ -221,7 +223,7 @@ function App() {
         </section>
 
         <section id="experience" aria-labelledby="experience-title" className="space-y-10">
-          <SectionTitle icon={Sparkles} id="experience-title" label="Experience" eyebrow="Robotics & AI delivery" />
+          <SectionTitle icon={Sparkles} id="experience-title" label="Experience" eyebrow="Vision systems with robotics reliability" />
           <div className="grid gap-6 md:grid-cols-2">
             {experienceData.map((item) => (
               <ExperienceCard key={`${item.role}-${item.company}`} item={item} />
@@ -237,7 +239,7 @@ function App() {
 
       <footer className="border-t border-slate-800 bg-slate-950/80 py-10 text-sm text-slate-400 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
-          <p>&copy; {new Date().getFullYear()} Kaivalya. Robotics engineered with ROS2, perception, and agentic AI.</p>
+          <p>&copy; {new Date().getFullYear()} Kaivalya. Vision-led robotics engineered with ROS2, perception, and agentic AI.</p>
           <p className="flex items-center gap-2">
             Built with <span className="text-cyan-300">React + Vite + TailwindCSS + Framer Motion</span>
           </p>

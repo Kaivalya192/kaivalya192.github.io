@@ -1,19 +1,28 @@
 const skillGroups = [
   {
-    title: 'Robotics & Control',
-    items: ['ROS2', 'MoveIt', 'Nav2', 'URDF', 'CANOpen', 'Modbus', 'Gazebo'],
+    title: 'Vision Systems & AI',
+    items: [
+      'Multi-view Geometry',
+      'YOLOv8',
+      'TensorRT',
+      'Depth Estimation',
+      'LangGraph',
+      'NeRF',
+      'LoFTR',
+      'OpenCV',
+    ],
   },
   {
-    title: 'Perception & AI',
-    items: ['YOLOv8', 'TensorRT', 'LangGraph', 'OpenCV', 'ONNX', 'RealSense', 'LoFTR'],
+    title: '3D Perception & Sensors',
+    items: ['Stereo Fusion', 'RealSense', 'Point Clouds', 'ONNX', 'Kalibr', 'SLAM Maps'],
   },
   {
-    title: 'Edge & Infrastructure',
-    items: ['NVIDIA Jetson', 'Docker', 'gRPC', 'MQTT', 'Azure IoT', 'Linux RT'],
+    title: 'Robotics Integration',
+    items: ['ROS2', 'MoveIt', 'Nav2', 'URDF', 'Modbus', 'CANOpen'],
   },
   {
-    title: 'Languages & Tools',
-    items: ['Python', 'C++', 'TypeScript', 'FastAPI', 'Vite', 'TailwindCSS', 'Framer Motion'],
+    title: 'Edge Platforms & Tools',
+    items: ['NVIDIA Jetson', 'Docker', 'gRPC', 'MQTT', 'Azure IoT', 'Linux RT', 'FastAPI', 'TypeScript'],
   },
 ];
 
