@@ -2,9 +2,9 @@ const projects = [
   {
     title: 'Vision-Guided Robotic Manipulation (VGR Module)',
     slug: 'vgr',
-    image: '/img/vgr.webp',
+    image: '/portfolio/img/vgr.jpg',
     desc: 'End-to-end ROS2 pipeline converting detections to calibrated robot poses; UDP/Modbus triggers; sequential pick-and-place and CNC tending.',
-    links: [{ label: 'Case Study', href: '#' }],
+    links: [{ label: 'POC Videos', href: 'https://www.youtube.com/playlist?list=PLJ-_6JJGVYs7Gqu8ESUrtyzhXySPsZ_cP' }],
     badges: ['Deployed', 'Industrial', 'ROS2', 'Calibrated'],
     metrics: [
       { k: 'Latency', v: '~200ms' },
@@ -14,25 +14,11 @@ const projects = [
     impactRank: 1,
   },
   {
-    title: 'Shoonya Recycling — Battery Classification Vision System',
-    slug: 'shoonya',
-    image: '/img/shoonya.webp',
-    desc: 'Multi-level brand classification with YOLO + OCR fusion; ONNX/TensorRT optimized for sub-second industrial latency.',
-    links: [{ label: 'Overview', href: '#' }],
-    badges: ['Deployed', 'YOLO', 'OCR', 'TensorRT'],
-    metrics: [
-      { k: 'mAP@50', v: '85.7%' },
-      { k: 'Latency', v: '< 0.2s' },
-    ],
-    tags: ['vision', 'ocr', 'industrial'],
-    impactRank: 2,
-  },
-  {
     title: 'Agentic AI for Half-Humanoid Robot',
     slug: 'agentic',
-    image: '/img/agent.webp',
+    image: '/portfolio/img/humanoid.png',
     desc: 'LangGraph-driven multi-turn reasoning loop combining GPT, VLMs, and control APIs; bimanual execution with fallback replanning.',
-    links: [{ label: 'Demo', href: '#' }],
+    links: [{ label: 'Post', href: 'https://www.linkedin.com/posts/kaivalya192_report-activity-7360568543395856384-JBNp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEMBIpgBXx01Mw3Bemm0PV5uit0yPpp81Cc' }],
     badges: ['Agentic', 'LangGraph', 'VLM', 'Bimanual'],
     metrics: [
       { k: 'Tasks', v: '25+ skills' },
@@ -44,7 +30,7 @@ const projects = [
   {
     title: 'Grasp Detection for Multiple Objects',
     slug: 'grasp',
-    image: '/img/grasp.webp',
+    image: '/portfolio/img/graspnet.png',
     desc: '6-DOF grasp generation from RealSense point clouds; dockerized API; robust any-view grasping.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/contact_graspnet' }],
     badges: ['6-DOF', 'PointCloud', 'Docker'],
@@ -58,7 +44,7 @@ const projects = [
   {
     title: '6DOF Live Pose Estimation & Tracking',
     slug: 'pose',
-    image: '/img/pose.webp',
+    image: '/portfolio/img/pose.webp',
     desc: 'Live camera-to-object transform at up to 90 FPS with depth camera; ROS2 package available.',
     links: [
       { label: 'Repo', href: 'https://github.com/Kaivalya192/live-pose' },
@@ -75,7 +61,7 @@ const projects = [
   {
     title: 'Novel 3D Reconstruction (NeRF + LoFTR)',
     slug: 'nerf',
-    image: '/img/3d.webp',
+    image: '/portfolio/img/3d.webp',
     desc: 'NeRF-textured object reconstruction even with poor texture via local feature matching (LoFTR).',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/Object_Reconstruction' }],
     badges: ['NeRF', 'LoFTR', 'Reconstruction'],
@@ -84,20 +70,9 @@ const projects = [
     impactRank: 6,
   },
   {
-    title: 'ROS2 Perception Modules — YOLO & MiDaS Integration',
-    slug: 'perception',
-    image: '/img/perception.webp',
-    desc: 'Modular detection and monocular depth nodes; plug-and-play topics for RViz/robot pipelines.',
-    links: [{ label: 'Docs', href: '#' }],
-    badges: ['ROS2', 'YOLO', 'MiDaS'],
-    metrics: [{ k: 'Nodes', v: '2+' }],
-    tags: ['ros2', 'perception'],
-    impactRank: 7,
-  },
-  {
     title: 'YOLOv8 with Segmentation in ROS2',
     slug: 'yolo',
-    image: '/img/Yolo.webp',
+    image: '/portfolio/img/Yolo.webp',
     desc: 'Real-time object segmentation integrated into a ROS2 graph for robotic perception.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/YoloBot_src' }],
     badges: ['YOLOv8', 'Segmentation', 'ROS2'],
@@ -108,7 +83,7 @@ const projects = [
   {
     title: 'Monocular Depth Estimation in ROS2 (MiDaS)',
     slug: 'midas',
-    image: '/img/midas.webp',
+    image: '/portfolio/img/midas.webp',
     desc: 'Single-camera depth for path planning and perception; ROS2 integration.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/midas_ros2' }],
     badges: ['MiDaS', 'Depth', 'ROS2'],
@@ -119,7 +94,7 @@ const projects = [
   {
     title: 'Multi-Purpose Differential Drive Bot in ROS2',
     slug: 'bot',
-    image: '/img/bot_spawn.webp',
+    image: '/portfolio/img/bot_spawn.webp',
     desc: 'SLAM + RGB-D vision + control; a reusable ROS2 starter stack.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/bot_spawn' }],
     badges: ['SLAM', 'RGB-D', 'ROS2'],
@@ -129,7 +104,7 @@ const projects = [
   {
     title: 'PathFinder Bot with PID (SVNIT MindBend 2nd)',
     slug: 'pathfinder',
-    image: '/img/pathfinder.webp',
+    image: '/portfolio/img/pathfinder.webp',
     desc: 'Wall-maze solver on Arduino with PID; placed 2nd at MindBend — SVNIT.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/WallMazeSolver' }],
     badges: ['Arduino', 'PID', 'Award'],
@@ -139,22 +114,12 @@ const projects = [
   {
     title: 'Line Follower Maze-solving Bot (IITB Micromouse)',
     slug: 'lms',
-    image: '/img/LMS.webp',
+    image: '/portfolio/img/LMS.webp',
     desc: '5-IR sensor array; dry-run shortest path; qualified IITB Micromouse.',
     links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/LMS' }],
     badges: ['PID', 'LineFollower', 'Competition'],
     tags: ['embedded', 'robot'],
     impactRank: 12,
-  },
-  {
-    title: 'Real-Time Voice Activity Detection (VAD)',
-    slug: 'vad',
-    image: '/img/vad.webp',
-    desc: 'Lightweight VAD with live terminal feedback and custom chunk analysis.',
-    links: [{ label: 'Repo', href: 'https://github.com/Kaivalya192/VAD_Barry' }],
-    badges: ['Audio', 'Realtime'],
-    tags: ['audio', 'utils'],
-    impactRank: 13,
   },
 ];
 

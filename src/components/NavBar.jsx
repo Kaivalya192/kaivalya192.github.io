@@ -6,7 +6,7 @@ const links = [
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
-  { href: '/pdf/cv.pdf', label: 'Resume', external: true },
+  { href: '/portfolio/pdf/cv.pdf', label: 'Resume', external: true },
 ];
 
 function NavBar() {

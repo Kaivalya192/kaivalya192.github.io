@@ -116,7 +116,7 @@ function App() {
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-300 md:text-base">
               <a
-                href="mailto:kaivalya192@gmail.com"
+                href="mailto:kaivalyashah192@gmail.com"
                 className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 font-semibold text-slate-100 transition hover:border-cyan-500/70 hover:text-cyan-200"
               >
                 <Mail size={16} /> Contact
@@ -137,7 +137,7 @@ function App() {
               >
                 <Linkedin size={18} /> LinkedIn
               </a>
-              <a href="/pdf/cv.pdf" className="inline-flex items-center gap-2 text-cyan-300 transition hover:text-cyan-100">
+              <a href="/portfolio/pdf/cv.pdf" className="inline-flex items-center gap-2 text-cyan-300 transition hover:text-cyan-100">
                 Resume ↗
               </a>
             </div>
@@ -152,7 +152,7 @@ function App() {
             <div className="relative h-64 w-64 overflow-hidden rounded-[32px] border border-cyan-500/40 bg-slate-900/70 p-2 shadow-[0_30px_60px_rgba(15,23,42,0.6)] backdrop-blur sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-[22rem] lg:w-[22rem]">
               <div className="absolute inset-3 rounded-[24px] bg-gradient-to-br from-cyan-500/20 via-transparent to-indigo-500/20 mix-blend-screen" />
               <img
-                src="/img/avatar.webp"
+                src="/portfolio/img/prof.webp"
                 alt="Kaivalya - Robotics Engineer"
                 loading="eager"
                 decoding="async"
@@ -199,7 +199,7 @@ function App() {
                 className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-1 text-sm text-slate-200 focus:border-cyan-500"
               >
                 <option value="impact">Impact</option>
-                <option value="az">A -> Z</option>
+                <option value="az">A -{'>'} Z</option>
               </select>
             </div>
           </div>
